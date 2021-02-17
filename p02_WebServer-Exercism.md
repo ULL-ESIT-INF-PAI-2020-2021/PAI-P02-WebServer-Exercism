@@ -13,7 +13,21 @@ que se tendrán en cuenta a la hora de evaluar esta práctica:
 * Se valorará positivamente que el alumnado haya realizado las tareas propuestas con anterioridad a la sesión de prácticas
 * Se valorará la realización de las diferentes tareas que se proponen
 
-### Node Express Static Web Server. 
+### Servidor web basado en Node y Express
+Establezca una conexión `ssh` con su máquina virtual IaaS.
+
+utilice [esta referencia](https://lenguajejs.com/npm/introduccion/que-es/) para conocer `npm` e instalarlo en
+su máquina virtual.
+
+Clone este repositorio en su VM del IaaS-ULL y siga estas instrucciones para instalar en la máquina IaaS un servidor web basado en Node y Express. 
+No es necesario que conozca los detalles de estas herramientas, sino simplemente seguir las instrucciones suministradas.
+
+Si todo funciona correctamente, al abrir un navegador en la URL http://<your VM IP address>:8080 debería ejecutar en esa web un programa que calcula el 
+valor de PI de forma aproximada.
+
+Modificando convenientemente el fichero index.html (o colocando los ficheros necesarios en su lugar) en el directorio `www` del proyecto 
+creado puede visualizar diferentes webs que pudiera crear en el futuro. Experimente con este servidor web.
+
 
 [![Node Logo](http://sub1.kevinchisholm.com/blog/images/node-js-logo.png)](http://blog.kevinchisholm.com/?s=node)
 

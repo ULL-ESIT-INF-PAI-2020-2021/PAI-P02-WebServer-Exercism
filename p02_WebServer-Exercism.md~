@@ -31,39 +31,41 @@ creado puede visualizar diferentes webs que pudiera crear en el futuro. Experime
 
 [![Node Logo](http://sub1.kevinchisholm.com/blog/images/node-js-logo.png)](http://blog.kevinchisholm.com/?s=node)
 
-## Dependencias
+## Dependencies
 
-Lo que se precisa para ejecutar instalar el servidor: 
+What you need to run this app:
 
 * [Node.Js](https://nodejs.org)
 
-### Configuración
+## Instructions
 
-* 1 - Clone este repo en el directorio de esta práctica: 
+### Setup
+
+* 1 - Clone this repo in your directory:
 
 ```
 git clone git@github.com:fsande/PAI-P02-WebServer-Exercism.git <yourDirectory>
 ```
 
-* 2 - Sitúese en ese directorio para trabajar en él:
+* 2 - move to yourDirectory:
 
 ```
 cd <yourDirectory>
 ```
 
-* 3 - Ejecute este comando:
+* 3 - Run this command:
 
 ```
 npm install
 ```
 
-* 4 Ejecute a continuación:
+* 4 Run this command:
 
 ```
 npm start
 ```
 
-* 5 Abra una página en su navegador con la siguiente dirección:
+* 4 Point your browser to:
 
 ```
 http://<your VM IP address>:8080

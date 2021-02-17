@@ -70,6 +70,13 @@ npm start
 http://<your VM IP address>:8080
 ```
 
+Para que el servidor web se mantenga activo incluso en el caso de que se cierre la sesión en la máquina
+virtual utilice el comando
+```
+$ npm start > /dev/null 2>&1 & disown -a
+```
+en el paso 5 anterior.
+
 ### Exercism
 [Exercism](https://exercism.io/) es una plataforma orientada a aprender a programar o también a mejorar las
 capacidades de cualquier programadora.

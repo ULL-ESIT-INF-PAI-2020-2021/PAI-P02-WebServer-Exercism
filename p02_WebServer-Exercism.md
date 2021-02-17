@@ -10,8 +10,9 @@ Los objetivos de esta práctica son:
 ### Rúbrica de evaluacion del ejercicio
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
 que se tendrán en cuenta a la hora de evaluar esta práctica:
-* Se valorará positivamente que el alumnado haya realizado las tareas propuestas con anterioridad a la sesión de prácticas
-* Se valorará la realización de las diferentes tareas que se proponen
+* El alumnado ha de acreditar que es capaz de editar ficheros de forma remota en su VM usando VSC
+* El alumnado ha de ser capaz de instalar y mantener ejecutando un servidor web estático
+* El alumnado debe ser capaz de subir la solución a un problema de Exercism a esa plataforma
 
 ### Servidor web basado en Node y Express
 Establezca una conexión `ssh` con su máquina virtual IaaS.

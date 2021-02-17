@@ -22,7 +22,7 @@ su máquina virtual.
 Clone este repositorio en su VM del IaaS-ULL y siga estas instrucciones para instalar en la máquina IaaS un servidor web basado en Node y Express. 
 No es necesario que conozca los detalles de estas herramientas, sino simplemente seguir las instrucciones suministradas.
 
-Si todo funciona correctamente, al abrir un navegador en la URL http://<your VM IP address>:8080 debería ejecutar en esa web un programa que calcula el 
+Si todo funciona correctamente, al abrir un navegador en la URL `http://<your VM IP address>:8080` debería ejecutar en esa web un programa que calcula el 
 valor de PI de forma aproximada.
 
 Modificando convenientemente el fichero index.html (o colocando los ficheros necesarios en su lugar) en el directorio `www` del proyecto 
@@ -57,13 +57,13 @@ cd <yourDirectory>
 npm install
 ```
 
-* 4 Ejecute a continuación:
+* 4 - Ejecute a continuación:
 
 ```
 npm start
 ```
 
-* 5 Abra una página en su navegador con la siguiente dirección:
+* 5 - Abra una página en su navegador con la siguiente dirección:
 
 ```
 http://<your VM IP address>:8080

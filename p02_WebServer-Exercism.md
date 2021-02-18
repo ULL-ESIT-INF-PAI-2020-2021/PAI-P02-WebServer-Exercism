@@ -73,7 +73,7 @@ http://<your VM IP address>:8080
 Para que el servidor web se mantenga activo incluso en el caso de que se cierre la sesión en la máquina
 virtual utilice el comando
 ```
-$ npm start > /dev/null 2>&1 & disown -a
+$ nohup sudo -b npm start
 ```
 en el paso 5 anterior.
 

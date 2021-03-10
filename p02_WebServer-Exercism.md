@@ -186,9 +186,9 @@ La solución no tiene porqué aportarse en una única función (depende de la co
 El módulo que contiene la solución (fichero `hello-world.js`) solo exporta (de ahí la sentencia `export`)
 hacia otros módulos las funciones necesarias para evaluar los tests.
 
-Exercism utiliza 
-[sintaxis ES6 para los módulos](https://eloquentjavascript.net/10_modules.html#h_hF2FmOVxw7)
-mientras que NodeJS utiliza sintaxis CommonJS para los módulos.
+Para los módulos, Exercism utiliza 
+[sintaxis ES6](https://eloquentjavascript.net/10_modules.html#h_hF2FmOVxw7)
+mientras que NodeJS utiliza sintaxis CommonJS.
 Es por ello que el programa que se realice no puede ejecutarse directamente en node.
 Si se ejecuta, en el caso del problema *Hello World* con Node se obtiene un error:
 
@@ -209,7 +209,7 @@ es un
 [transpiler](https://en.wikipedia.org/wiki/Source-to-source_compiler)
 de Javascript. 
 Babel se suele utilizar para escribir código JS con características modernas que pudieran no estar
-contempladas en NodeJS, como ocurre con la sintaxis ES6.
+contempladas en NodeJS, como ocurre con la sintaxis ES6 para módulos.
 
 Para instalar `babel-node`:
 ```

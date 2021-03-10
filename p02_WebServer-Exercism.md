@@ -168,7 +168,7 @@ El siguiente paso consiste en editar el programa (en el caso del problema *Hello
 `hello-world.js`).
 Edite ese fichero hasta que considere que tiene una versión operativa.
 
-Si se analizan los tests del problema *Hello World* que figuran en el fichero `hello-world.spec.js'
+Si se analizan los tests del problema *Hello World* que figuran en el fichero `hello-world.spec.js`
 se observa que la función que los test evalúan es `hello()`.
 
 La plantilla que Exercism ofrece para la función tiene el siguiente contenido:

@@ -162,10 +162,67 @@ indicando el directorio donde ha colocado el código necesario para trabajar en 
 
 Revise los ficheros que exercism ha descargado.
 
-## Ejecución de los tests para un determinado problema
-El siguiente paso consiste en editar el programa (en el caso del problema "Hello World" el fichero a editar es
+## Solución del ejercicio
+
+El siguiente paso consiste en editar el programa (en el caso del problema *Hello World* el fichero a editar es
 `hello-world.js`).
 Edite ese fichero hasta que considere que tiene una versión operativa.
+
+Si se analizan los tests del problema *Hello World* que figuran en el fichero `hello-world.spec.js'
+se observa que la función que los test evalúan es `hello()`.
+
+La plantilla que Exercism ofrece para la función tiene el siguiente contenido:
+```js
+export const hello = () => {
+  // Place your code here
+};
+```
+
+Además de la función que evalúan los tests (`hello()` en el caso de este problema) puede Ud. usar cuantas
+otras funciones crea conveniente.
+La solución no tiene porqué aportarse en una única función (depende de la complejidad del programa).
+El módulo que contiene la solución (fichero `hello-world.js`) solo exporta (de ahí la sentencia `export`)
+hacia otros módulos las funciones necesarias para evaluar los tests.
+
+Exercism utiliza sintaxis ES6 para los módulos mientras que NodeJS utiliza sintaxis CommonJS para los módulos.
+Es por ello que el programa que se realice no puede ejecutarse directamente en node.
+Si se ejecuta, en el caso del problema *Hello World* con Node se obtiene un error:
+
+```
+node hello-world.js
+
+export const hello = () => {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+```
+
+Para poder ejecutar los programas de Exercism con la sintaxis de módulos de ES6, una posibilidad es usar 
+[babel-node](https://babeljs.io/docs/en/babel-node).
+
+[Babel](https://babeljs.io/)
+es un 
+[transpiler](https://en.wikipedia.org/wiki/Source-to-source_compiler)
+de Javascript. 
+Babel se suele utilizar para escribir código JS con características modernas que pudieran no estar
+contempladas en NodeJS, como ocurre con la sintaxis ES6.
+
+Para instalar `babel-node`:
+```
+npm install --save-dev @babel/node
+```
+
+y una vez instalado se pueden ejecutar los programas JS usando `npx`:
+
+```
+npx babel-node hello-world.js
+```
+
+A partir de este punto se debiera desarrollar de forma incremental la solución del problema planteado y se
+puede usar `console.log()` para evaluar provisionalmente la corrección de los resultados que se están
+obteniendo.
+
+## Ejecución de los tests para un determinado problema
 Una vez finalizado su programa, el siguiente paso consiste en pasar (superar) los tests del código.
 Cada ejercicio de Exercism va acompañado de una serie de tests que el programa debe superar para ser
 considerado válido.

@@ -171,7 +171,9 @@ Edite ese fichero hasta que considere que tiene una versión operativa.
 Si se analizan los tests del problema *Hello World* que figuran en el fichero `hello-world.spec.js`
 se observa que la función que los test evalúan es `hello()`.
 
-La plantilla que Exercism ofrece para la función tiene el siguiente contenido:
+En la plantilla que Exercism ofrece para la función, ésta se implementa como una 
+[arrow function](https://javascript.info/arrow-functions-basics):
+
 ```js
 export const hello = () => {
   // Place your code here
@@ -184,7 +186,9 @@ La solución no tiene porqué aportarse en una única función (depende de la co
 El módulo que contiene la solución (fichero `hello-world.js`) solo exporta (de ahí la sentencia `export`)
 hacia otros módulos las funciones necesarias para evaluar los tests.
 
-Exercism utiliza sintaxis ES6 para los módulos mientras que NodeJS utiliza sintaxis CommonJS para los módulos.
+Exercism utiliza 
+[sintaxis ES6 para los módulos](https://eloquentjavascript.net/10_modules.html#h_hF2FmOVxw7)
+mientras que NodeJS utiliza sintaxis CommonJS para los módulos.
 Es por ello que el programa que se realice no puede ejecutarse directamente en node.
 Si se ejecuta, en el caso del problema *Hello World* con Node se obtiene un error:
 
